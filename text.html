@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .hover-container {
+            position: relative;
+            width: 200px;
+            height: 30px;
+            background-color: pink;
+        }
+
+        .qr-code {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+        }
+
+        /* 悬停时显示二维码 */
+        .hover-container:hover .qr-code {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="hover-container">悬停显示二维码
+    <div class="qr-code">
+        <img src="uploads/home_tool_bar/pop_content.png" alt="二维码">
+    </div>
+</div>
+
+</body>
+</html>
